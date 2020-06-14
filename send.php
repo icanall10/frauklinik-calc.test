@@ -58,8 +58,8 @@ $message = implode("\r\n", [
 ]);
 
 $headers = array(
-    'From' => 'noreply@frauklinik.ru',
-    'Reply-To' => 'noreply@frauklinik.ru',
+    'From' => 'noreply@www.frauklinik.ru',
+    'Reply-To' => 'noreply@www.frauklinik.ru',
     'X-Mailer' => 'PHP/' . phpversion()
 );
 
