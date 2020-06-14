@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="mailru-verification" content="df90029f5989ee17"/>
+
+        <title>Frau Klinik | Прейскурант. Пластическая хирургия</title>
+
+        <link rel="icon" href="https://www.frauklinik.ru/favicon.ico?v=2" type="image/x-icon"/>
+        <link href="https://www.frauklinik.ru/design/styles/vendors.css" rel="stylesheet">
+        <link href="https://www.frauklinik.ru/design/styles/style.css" rel="stylesheet">
+        <link href="https://www.frauklinik.ru/design/styles/asperito.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://www.frauklinik.ru/design/styles/font-awesome.min.css">
+        <link href="./css/font.css" rel="stylesheet">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+        <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+
+
+        <link href="./css/calc.css" rel="stylesheet">
+        <script src="./js/jquery.magnific-popup.min.js"></script>
+        <script src="./js/js.js"></script>
+
+
+    </head>
+    <body>
+
+
+        <a href="#calc-popup" class="calc-button">Рассчитать кредит</a>
+
+
+        <div class="invisible">
+            <div id="calc-popup">
+                <div class="popup-title">Расчет кредита</div>
+                <form action="#" class="calc-form" data-calc-form>
+                    <div class="form-group">
+                        <label for="#">Сумма кредита, руб.</label>
+                        <input type="text" name="sum" onkeyup="this.value=this.value.replace(/[^\d]/,'')">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="#">Срок кредита</label>
+                        <select name="term">
+                            <option value="6">6 месяцев</option>
+                            <option value="8">8 месяцев</option>
+                            <option value="10">10 месяцев</option>
+                            <option value="12">12 месяцев</option>
+                            <option value="15">15 месяцев</option>
+                            <option value="18">18 месяцев</option>
+                            <option value="24">24 месяца</option>
+                            <option value="36">36 месяцев</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="#">Первоначальный взнос</label>
+                        <select name="contribution">
+                            <option value="0">без взноса</option>
+                            <option value="10">10 процентов</option>
+                            <option value="20">20 процентов</option>
+                            <option value="30">30 процентов</option>
+                            <option value="40">40 процентов</option>
+                            <option value="50">50 процентов</option>
+                            <option value="60">60 процентов</option>
+                            <option value="70">70 процентов</option>
+                            <option value="80">80 процентов</option>
+                            <option value="90">90 процентов</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group form-inline">
+                        <button type="submit" name="calc">Рассчитать</button>
+                        <div data-calc-message></div>
+                    </div>
+
+                    <div class="form-group invisible" data-calc-form-result>
+                        <div class="form-group item-total">
+                            Ежемесячный платеж: <span class="total"><span data-calc-form-total>0</span> руб.</span>
+                        </div>
+                    </div>
+
+                    <div class="form-group invisible" data-calc-form-contact>
+                        <div class="form-group">
+                            <label for="#">Ваше имя</label>
+                            <input type="text" name="name">
+                        </div>
+                        <div class="form-group">
+                            <label for="#">Телефон</label>
+                            <input type="text" name="phone">
+                        </div>
+                        <div class="form-group">
+                            <div class="g-recaptcha"
+                                 data-callback="recaptchaCallback"
+                                 data-sitekey="6LdSQ-sUAAAAAFB4SBSE7pfCKRF4dzyrhAWzHUUW"
+                            ></div>
+                        </div>
+                        <div class="form-group form-inline">
+                            <button type="submit" name="send">Отправить заявку</button>
+                            <div data-calc-message></div>
+                        </div>
+
+                    </div>
+                </form>
+
+                <div class="calc-form-complete invisible" data-calc-form-complete>
+                    <p>Ваша заявка успешно отправлена!</p>
+                    <p>Мы свяжемся с Вами в самое ближайщее время.</p>
+                </div>
+            </div>
+        </div>
+
+    </body>
+</html>

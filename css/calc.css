@@ -1,0 +1,191 @@
+.calc-button {
+    display: inline-block;
+    line-height: 44px;
+    color: #fff;
+    text-decoration: none;
+    padding: 0 18px;
+    background: #e52a71;
+    text-transform: uppercase;
+    font-family: TTTravels, Arial, sans-serif;
+    font-weight: 500;
+}
+.calc-button:hover {
+    background: #82379e;
+}
+
+.invisible {
+    display: none;
+}
+
+.mfp-bg {
+    opacity: 0.4;
+}
+.mfp-container {
+    padding: 0;
+}
+.mfp-content {
+    background: #fff;
+    box-sizing: border-box;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+#calc-popup {
+    padding: 30px;
+    box-sizing: border-box;
+}
+
+.mfp-close-btn-in .mfp-close {
+    text-indent: -9999px;
+    text-align: left;
+
+    width: 50px;
+    height: 50px;
+
+    opacity: 1;
+}
+.mfp-close-btn-in .mfp-close:after {
+    content: '';
+    position: absolute;
+
+    width: 20px;
+    height: 20px;
+
+    top: 50%;
+    left: 50%;
+    margin-top: -10px;
+    margin-left: -10px;
+
+    background: url(../img/close.svg);
+}
+
+.popup-title {
+    font-family: TTTravels, Arial, sans-serif;
+    font-size: 2.25rem;
+    font-weight: 700;
+    line-height: 1.11;
+    margin-bottom: 35px;
+}
+
+.calc-form .form-group {
+    margin-bottom: 30px;
+}
+.calc-form .form-group:last-child {
+    margin-bottom: 0;
+}
+
+.calc-form input[type="text"] {
+    width: 100%;
+    height: 40px;
+    background-color: #f8f8f8;
+    border: 0;
+    border-radius: 0;
+    -webkit-appearance: none;
+    padding: 0 10px;
+    margin: 0;
+    color: #b8b1ba;
+    font-family: TTTravels, Arial, sans-serif;
+    font-size: 0.875rem;
+    font-weight: 500;
+    outline: none !important;
+    box-sizing: border-box;
+
+    display: block;
+}
+.calc-form select {
+    width: 100%;
+    height: 40px;
+    background-color: #f8f8f8;
+    border: 0;
+    border-radius: 0;
+    padding: 0 30px 0 10px;
+    margin: 0;
+    color: #b8b1ba;
+    font-family: TTTravels, Arial, sans-serif;
+    font-size: 0.875rem;
+    font-weight: 500;
+    outline: none !important;
+    box-sizing: border-box;
+
+    -moz-appearance: none; /* Firefox */
+    -webkit-appearance: none; /* Safari and Chrome */
+    appearance: none;
+
+    background-image: url("data:image/svg+xml,<svg width='24' height='24' xmlns='http://www.w3.org/2000/svg'><path d='m0,6l12,12l12,-12l-24,0z'/><path fill='none' d='m0,0l24,0l0,24l-24,0l0,-24z'/></svg>");
+    background-repeat: no-repeat;
+    background-size: 8px 8px;
+    background-position: right 10px center;
+
+    display: block;
+}
+
+.calc-form label {
+    display: block;
+    color: #000;
+    font-family: TTTravels, Arial, sans-serif;
+    font-size: 0.875rem;
+    font-weight: 500;
+    line-height: 1.43;
+    margin-bottom: 6px;
+}
+
+.calc-form button {
+    text-align: center;
+    height: 44px;
+    background-color: #82379e;
+    border: 0;
+    color: #fff;
+    font-family: TTTravels, Arial, sans-serif;
+    font-size: 1rem;
+    font-weight: 600;
+    line-height: 1.43;
+    cursor: pointer;
+    padding: 0 35px;
+    margin: 0 25px 0 0;
+    flex-shrink: 0;
+    box-sizing: border-box;
+    border: none;
+
+    -webkit-appearance: none;
+    -webkit-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+
+    outline: none !important;
+}
+.calc-form button:hover {
+    background: #54209E;
+}
+
+.calc-form .item-total {
+    font-size: 22px;
+    font-family: TTTravels, Arial, sans-serif;
+}
+.calc-form .item-total .total {
+    font-weight: bold;
+}
+
+.form-inline {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+[data-calc-message] {
+    font-size: 15px;
+    font-family: TTTravels, Arial, sans-serif;
+    font-weight: 500;
+    color: red;
+}
+
+.calc-form-complete {
+    font-family: TTTravels, Arial, sans-serif;
+    font-size: 18px;
+}
+.calc-form-complete p {
+    margin-bottom: 15px;
+}
+.calc-form-complete p:last-of-type {
+    margin-bottom: 0;
+}
