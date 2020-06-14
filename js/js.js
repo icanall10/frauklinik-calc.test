@@ -79,15 +79,9 @@
     });
 
 
-    number_format = function (number, decimals, dec_point, thousands_sep) {	// Format a number with grouped thousands
-        //
-        // +   original by: Jonas Raoni Soares Silva (http://www.jsfromhell.com)
-        // +   improved by: Kevin van Zonneveld (http://kevin.vanzonneveld.net)
-        // +	 bugfix by: Michael White (http://crestidg.com)
-
+    number_format = function (number, decimals, dec_point, thousands_sep) {
         var i, j, kw, kd, km;
 
-        // input sanitation & defaults
         if (isNaN(decimals = Math.abs(decimals))) {
             decimals = 2;
         }
@@ -108,9 +102,7 @@
 
         km = (j ? i.substr(0, j) + thousands_sep : "");
         kw = i.substr(j).replace(/(\d{3})(?=\d)/g, "$1" + thousands_sep);
-        //kd = (decimals ? dec_point + Math.abs(number - i).toFixed(decimals).slice(2) : "");
         kd = (decimals ? dec_point + Math.abs(number - i).toFixed(decimals).replace(/-/, 0).slice(2) : "");
-
 
         return km + kw + kd;
     }
