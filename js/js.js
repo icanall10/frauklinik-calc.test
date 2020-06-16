@@ -3,7 +3,8 @@
     $(document).ready(function () {
 
         $('.calc-button').magnificPopup({
-            closeOnBgClick: false
+            closeOnBgClick: false,
+            mainClass: 'calc-popup-wrapper'
         });
 
 
